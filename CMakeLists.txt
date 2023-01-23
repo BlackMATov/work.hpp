@@ -10,6 +10,16 @@ option(WORK_HPP_NO_EXCEPTIONS "Don't use exceptions" OFF)
 option(WORK_HPP_NO_RTTI "Don't use RTTI" OFF)
 
 #
+# vendors
+#
+
+add_subdirectory(vendors/defer.hpp)
+add_subdirectory(vendors/enum.hpp)
+add_subdirectory(vendors/flat.hpp)
+add_subdirectory(vendors/meta.hpp)
+add_subdirectory(vendors/vmath.hpp)
+
+#
 # library
 #
 
@@ -21,6 +31,13 @@ add_library(work.hpp::work.hpp ALIAS ${PROJECT_NAME})
 
 target_compile_features(${PROJECT_NAME} INTERFACE
     cxx_std_20)
+
+target_link_libraries(${PROJECT_NAME} INTERFACE
+    defer.hpp::defer.hpp
+    enum.hpp::enum.hpp
+    flat.hpp::flat.hpp
+    meta.hpp::meta.hpp
+    vmath.hpp::vmath.hpp)
 
 target_include_directories(${PROJECT_NAME} INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/headers>

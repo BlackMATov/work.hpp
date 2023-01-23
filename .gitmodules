@@ -4,3 +4,18 @@
 [submodule "develop/vendors/fmt"]
 	path = develop/vendors/fmt
 	url = https://github.com/fmtlib/fmt
+[submodule "vendors/meta.hpp"]
+	path = vendors/meta.hpp
+	url = https://github.com/BlackMATov/meta.hpp
+[submodule "vendors/flat.hpp"]
+	path = vendors/flat.hpp
+	url = https://github.com/BlackMATov/flat.hpp
+[submodule "vendors/vmath.hpp"]
+	path = vendors/vmath.hpp
+	url = https://github.com/BlackMATov/vmath.hpp
+[submodule "vendors/defer.hpp"]
+	path = vendors/defer.hpp
+	url = https://github.com/BlackMATov/defer.hpp
+[submodule "vendors/enum.hpp"]
+	path = vendors/enum.hpp
+	url = https://github.com/BlackMATov/enum.hpp
