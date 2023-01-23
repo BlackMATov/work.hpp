@@ -14,6 +14,7 @@ target_compile_options(${PROJECT_NAME}.setup_targets INTERFACE
         -Werror -Weverything -Wconversion
         -Wno-c++98-compat
         -Wno-c++98-compat-pedantic
+        -Wno-ctad-maybe-unsupported
         -Wno-exit-time-destructors
         -Wno-padded
         -Wno-shadow-field-in-constructor

@@ -4,8 +4,10 @@
  * Copyright (C) 2023, by Matvey Cherevko (blackmatov@gmail.com)
  ******************************************************************************/
 
-#include "work_untests.hpp"
+#include <work.hpp/work_all.hpp>
 
-TEST_CASE("work_hpp") {
-    namespace work = work_hpp;
+#include <doctest/doctest.h>
+
+TEST_CASE("work_hpp")
+{
 }
