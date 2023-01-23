@@ -3,7 +3,8 @@
         "files.encoding": "utf8",
         "files.insertFinalNewline": true,
         "files.trimFinalNewlines": true,
-        "files.trimTrailingWhitespace": true
+        "files.trimTrailingWhitespace": true,
+        "editor.formatOnSave": true
     },
     "[cmake]": {
         "files.encoding": "utf8",
